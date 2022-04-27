@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>mixitup jquery plugin</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>mixitup jquery plugin (filtering-by-text-input)</h1>
+      <div class="controls">
+        <button type="button" class="control" data-filter="all">All</button>
+        <button type="button" class="control" data-filter=".green">Green</button>
+        <button type="button" class="control" data-filter=".blue">Blue</button>
+        <button type="button" class="control" data-filter=".pink">Pink</button>
+        <button type="button" class="control" data-filter="none">None</button>
+
+        <button type="button" class="control" data-sort="default:asc">Asc</button>
+        <button type="button" class="control" data-sort="default:desc">Desc</button>
+
+        <input type="text" class="input" data-ref="input-search" placeholder="Search by color" />
+      </div>
+
+      <div class="container" data-ref="container">
+        <div class="mix green"></div>
+        <div class="mix green"></div>
+        <div class="mix blue"></div>
+        <div class="mix pink"></div>
+        <div class="mix green"></div>
+        <div class="mix blue"></div>
+        <div class="mix pink"></div>
+        <div class="mix blue"></div>
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+      </div>
+    </div>
+    <!-- JS links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="vendor/mixitup/mixitup.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
